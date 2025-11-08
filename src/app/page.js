@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import { ArrowRight, Rocket, BarChart, Megaphone, Globe } from "lucide-react";
 import Image from "next/image";
 import Navbar from "./components/Navbar";
-import InfiniteWords from "./components/InfiniteWords";
-import HoverExpand_Horizontal from "./components/HoverExpand_Horizontal";
 import HeroMediaGrid from "./components/HeroMediaGrid";
+import SMMSection from "./components/SMMSection";
+import ScrollStepper from "./components/ScrollStepper";
 
 // for Hero section
 const media = [
@@ -44,7 +44,7 @@ export default function Home() {
         <section className="relative w-full pt-14 z-10 overflow-hidden bg-gray-400 rounded-3xl  ">
           {/* Bottom-left blur */}
           {/* <div className="absolute  -bottom-30 -left-24 w-96 h-96 bg-white z-1 opacity-80 rounded-full filter blur-3xl pointer-events-none"></div> */}
-        
+
           {/* Bottom-right blur */}
           {/* <div className="absolute -bottom-30 -right-24 w-96 h-96 bg-white z-1 opacity-80 rounded-full filter blur-3xl pointer-events-none"></div> */}
           <HeroMediaGrid media={media} />
@@ -88,9 +88,7 @@ export default function Home() {
         {/* <section className="w-full">
           <HoverExpand_Horizontal images={imgs} className="max-w-6xl mx-auto" />
         </section> */}
-        <section className="w-full">
-          <InfiniteWords />
-        </section>
+
         {/* About Section */}
         <section id="about" className="py-20 px-6 bg-white">
 
@@ -118,7 +116,13 @@ export default function Home() {
             />
           </div>
         </section>
-
+        <section>
+          <SMMSection />
+        </section>
+        <section>
+          
+          <ScrollStepper />
+        </section>
         {/* Testimonials */}
         <section id="testimonials" className="py-20 px-6 bg-gray-50">
           <div className="max-w-6xl mx-auto text-center">
