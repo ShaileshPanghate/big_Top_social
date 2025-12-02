@@ -30,7 +30,7 @@ export default function SMMSection() {
           your purpose. You can be in it for:
         </p>
 
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+        <div className="mt-12 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-10">
           {items.map((item, i) => (
             <div
               key={i}

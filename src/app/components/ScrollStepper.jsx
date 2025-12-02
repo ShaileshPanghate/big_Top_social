@@ -67,7 +67,7 @@ export default function ScrollStepper() {
   }, []);
 
   return (
-    <section className="relative bg-white py-20 px-6 flex flex-col md:flex-row justify-center  max-w-7xl mx-auto gap-12">
+    <section className="relative bg-white py-20 px-6 flex flex-col md:flex-row justify-center max-w-7xl mx-auto gap-12">
       {/* LEFT SIDE — FIXED STEPPER */}
       <div className="md:w-1/3 relative ">
         

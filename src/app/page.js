@@ -57,7 +57,7 @@ export default function Home() {
         <section id="services" className="py-20 px-6 bg-gray-50 ">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-4xl font-medium mb-12">OUR SERVICES</h2>
-            <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-10">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 md:gap-10 gap-2">
               {[
                 { icon: <Megaphone className="w-10 h-10 text-indigo-600" />, title: "Social Media Marketing", desc: "Build strong presence on platforms like Instagram, LinkedIn & Facebook." },
                 { icon: <BarChart className="w-10 h-10 text-indigo-600" />, title: "SEO Optimization", desc: "Rank higher and reach the right audience with powerful SEO strategies." },
@@ -116,13 +116,15 @@ export default function Home() {
             />
           </div>
         </section>
+
         <section>
           <SMMSection />
         </section>
+
         <section>
-          
           <ScrollStepper />
         </section>
+
         {/* Testimonials */}
         <section id="testimonials" className="py-20 px-6 bg-gray-50">
           <div className="max-w-6xl mx-auto text-center">

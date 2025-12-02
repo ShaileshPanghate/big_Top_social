@@ -21,8 +21,8 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <a href="/" className="text-2xl font-bold text-indigo-600">
-         <img src="/images/" alt="" />BigTopSocial
+        <a href="/" className="w-70 -m-10 p-0 ">
+         <img src="/images/bts_done-removebg.png" alt=""   />
         </a>
 
         {/* Desktop Nav */}

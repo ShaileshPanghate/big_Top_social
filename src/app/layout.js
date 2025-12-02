@@ -1,7 +1,6 @@
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import DrawingCursor from "./components/DrawingCursor";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,10 +23,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <DrawingCursor  color="59,130,246" // blue-500 rgb
-          maxPoints={30}
-          minRadius={1}
-          maxRadius={5}/>
+        
    {children}
       </body>
     </html>
